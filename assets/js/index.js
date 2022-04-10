@@ -1,39 +1,3 @@
-// const container = document.getElementById("container");
-// const doSearch = document.getElementById("search");
-// function search() {
-//   let primeList = "";
-//   let primes = findPrime(1, 50);
-//   let worker = new Worker('./webworker.js');
-//   for (let i = 0; i < primes.length; i++) {
-//     primeList += primes[i];
-//     if (i != primes.length - 1) primeList += ", ";
-//   }
-//   container.innerHTML = primes;
-// }
-// doSearch.onclick = function () {
-//   search();
-// };
-// function findPrime(from, to) {
-//   let list = [];
-//   for (let i = from; i <= to; i++) {
-//     list.push(i);
-//   }
-//   let primes = [];
-//   for (let i = 0; i <= list.length; i++) {
-//     let flag = 0;
-//     for (let j = 2; j < i; j++) {
-//       if (i % j == 0) {
-//         flag = 1;
-//         break;
-//       }
-//     }
-//     if (i > 1 && flag == 0) {
-//       primes.push(i);
-//     }
-//   }
-//   return primes;
-// }
-
 const container = document.getElementById("container");
 const doSearch = document.getElementById("doSearch");
 const alertBtn = document.getElementById("button");
