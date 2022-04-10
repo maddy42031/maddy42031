@@ -8,7 +8,7 @@ const toInput = document.getElementById('to');
 let worker;
 function search() {
   doSearch.disabled = true;
-  worker = new Worker("../assets/js/webworker.js");
+  worker = new Worker("./webworker.js");
   worker.postMessage({
     from: fromInput.value,
     to: toInput.value,
